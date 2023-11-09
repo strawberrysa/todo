@@ -40,12 +40,10 @@ function App() {
             }).map((todo) => {
               return (
                 <div className='todobox' key={todo.id}>
-                  <p>{todo.id}</p>
                   <h3>Title</h3>
                   <p>{todo.title}</p>
                   <h3>Things To Do</h3>
                   <p> {todo.contents}</p>
-                  <p>{todo.isDone.toString()}</p>
                   <button onClick={() => {
                     const newTodo = todos.map((item) => {
                       if (item.id === todo.id) {
@@ -77,12 +75,10 @@ function App() {
             }).map((todo) => {
               return (
                 <div className='todobox' key={todo.id}>
-                  <p>{todo.id}</p>
                   <h3>Title</h3>
                   <p>{todo.title}</p>
                   <h3>Things To Do</h3>
                   <p> {todo.contents}</p>
-                  <p>{todo.isDone.toString()}</p>
                   <button onClick={() => {
                     const newTodo = todos.map((item) => {
                       if (item.id === todo.id) {
